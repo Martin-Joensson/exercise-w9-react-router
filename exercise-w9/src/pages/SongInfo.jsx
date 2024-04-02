@@ -10,6 +10,7 @@ function SongInfo() {
   console.log("Song title: ", songTitle)
   console.log("Matched Song: ", matchedSong)
   // TODO: Fetch the song title from the URL and find the corresponding song data and add a conditional to display some simple html if there is no song :)
+  if (!matchedSong) return <div>Song not found...</div>
 
   return (
     <>
